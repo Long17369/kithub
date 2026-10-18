@@ -12,13 +12,7 @@ pluginManagement {
         maven {
             url = uri("https://maven.aliyun.com/repository/apache-snapshots")
         }
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
